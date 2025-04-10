@@ -158,7 +158,7 @@ const AddEmployee = () => {
                 />
               </Form.Group>
 
-              <Button variant="primary" type="submit" block={true}>
+              <Button variant="primary" type="submit" block>
                 Add Employee
               </Button>
             </Form>

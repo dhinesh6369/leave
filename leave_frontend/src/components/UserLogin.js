@@ -20,6 +20,7 @@ const UserLogin = () => {
       console.log("Api gateway url : "+process.env.REACT_APP_API_URL_USER);
       if (response.status === 200) {
         alert('Login successful!');
+
         const employee = response.data;
 
         localStorage.setItem('empId', employee.empId);
