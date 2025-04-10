@@ -6,7 +6,7 @@ services:
     build:
       context: ./leave_backend  # Adjust to your Leave Service directory
       dockerfile: Dockerfile
-    image: meghanareddy2003/leave_management_v1_01  # Consistent with your naming
+    image: jayashreerao15/leave_management  # Consistent with your naming
     container_name: leavecontainer
     ports:
       - "8080:8080"  # Dynamic port from .env
@@ -26,7 +26,7 @@ services:
     build:
       context: ./UserProfile  # Adjust to your User Service directory
       dockerfile: Dockerfile
-    image: meghanareddy2003/user_management_v1_01  # Consistent with your naming
+    image: jayashreerao15/user_management  # Consistent with your naming
     container_name: leaveusercontainer
     ports:
       - "8082:8082"  # Dynamic port from .env
@@ -51,7 +51,7 @@ services:
       args:  # Build-time arguments for React
         REACT_APP_API_URL_LEAVE: "${REACT_APP_API_URL_LEAVE}"
         REACT_APP_API_URL_USER: "${REACT_APP_API_URL_USER}"
-    image: meghanareddy2003/frontend_v1_01  # Consistent with your naming
+    image: jayashreerao15/frontend # Consistent with your naming
     container_name: leave-react-frontend
     ports:
       - "3000:3000"  # Map external port from .env to internal 80

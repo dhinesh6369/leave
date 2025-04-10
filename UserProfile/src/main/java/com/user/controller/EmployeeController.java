@@ -23,7 +23,7 @@ import com.user.service.EmployeeService;
 @RestController
 @RequestMapping("/api/employees")
 //@CrossOrigin("http://localhost:3000")
-@CrossOrigin(origins = "http://15.168.114.125:3000")
+@CrossOrigin(origins = "*")
 public class EmployeeController {
 
     @Autowired
